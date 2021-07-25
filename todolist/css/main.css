@@ -1,0 +1,96 @@
+html {
+  height: 100%;
+  background-image: linear-gradient(#ff6161, #ff768c);
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  color: #0f222d;
+  background-size: auto;
+}
+/* TODO 1 FLEXBOX ÖĞREN https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+.main {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+h1 {
+  text-align: center;
+  color: #fff;
+}
+form {
+  background-color: #fff;
+  padding: 15px;
+}
+input[type="text"] {
+  width: 310px;
+  height: 30px;
+  outline: 0;
+  border: none;
+  font-size: 1.5em;
+  background: #fff;
+  color: #2f4f4f;
+}
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+button {
+  font-size: 1.5em;
+  color: #53bdff;
+  background-color: #fff;
+  outline: 0;
+  border: none;
+  width: 50px;
+  cursor: pointer;
+}
+.tasksBoard {
+  background-color: #fff;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 40px;
+  /*display: none;*/
+}
+ul {
+  list-style: none;
+}
+li {
+  border-bottom: 1px solid #53bdff;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  font-size: 1.3em;
+  color: #2f4f4f;
+}
+a {
+  float: right;
+  text-align: right;
+  color: #ff6161;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.delete {
+  height: 25px;
+  width: 25px;
+  background-color: #ff6161;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+@media (max-width: 500px) {
+  .main {
+    margin: auto;
+    width: 100%;
+  }
+  input[type="text"] {
+    width: 80%;
+  }
+  button {
+    width: 10%;
+  }
+}
